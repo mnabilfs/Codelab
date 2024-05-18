@@ -2,13 +2,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         ArrayList<String> mahasiswa = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         String input;
 
-        while (true) {
-            System.out.print("Masukkan nama mahasiswa: ");
+        for (int j = 0; ; j++) {
+            System.out.print("Masukkan nama mahasiswa ke-" + (j + 1) + ": ");
             input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("selesai")) {
@@ -33,5 +33,4 @@ public class Main {
 
         scanner.close();
     }
-
 }
